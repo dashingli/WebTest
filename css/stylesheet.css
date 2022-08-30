@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/* 头部导航 */
+.header-container{
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    margin: 0 auto;
+    background-color: black;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-navs{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.navs{
+    color: #ffff;
+    opacity: 0.7;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+
+
+/* 文字描述和图片 */
+.header-text-image{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-bottom: 13rem;
+}
+.header-text{
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+.header-title{
+    font-size: 5.5rem;
+    color: #ffff;
+    margin-bottom: 0;
+}
+.header-desc{
+    color: #ffff;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+.header-button{
+    background-color: #ff3400;
+    border-style: none;
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+.banner{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+/* 搜索部分 */
+.search-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-title{
+    font-size: 3.5rem;
+    font-weight:bolder;
+    color: #1b0760;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.search-desc{
+    font-size: 1.8rem;
+    text-align: center;
+    opacity: 0.6;
+    font-weight: 600;
+    width: 65rem;
+}
+.search-search{
+    display: flex;
+    margin-top: 2.5rem;
+    border: 2px solid #f5f7f8;
+    border-radius:20rem;
+    justify-content: space-between;
+    width: 70rem;
+    height: 6rem;
+}
+.search-input{
+    margin-left: 3rem;
+    border-style: none;
+    width: 50rem;
+    color: #1b0760;
+    font-size: 1.5rem;
+}
+.search-button{
+    background-color: #ff3400;
+    border-style: none;
+    width: 16rem;
+    height: 5rem;
+    border-radius: 3rem;
+    margin: auto auto;
+    color: #ffff;
+    font-weight: 600;
+    position: relative;
+}
+.icon-search{
+    fill:#ffff;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left:4rem;
+    bottom: 1.5rem;
+}
+.font-search{
+    display: block;
+    position: absolute;
+    left:7rem;
+    bottom: 1.6rem;
+}
+.search-price-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price{
+    /* display: block; */
+    font-size: 1.7rem;
+    color: #1b0760;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+.price-border{
+    border:1px solid black;
+    border-radius: 2rem;
+    background-color: #00d9ff;
+    color: #ffff;
+    padding: 0.2rem 1rem;
+}
+
+
+/* 卡片部分 */
+.card-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 12rem;
+}
+
+.card{
+    position: relative;
+    width:35rem;
+    height: 50rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow:12px 12px 34px #666666,
+    -12px -12px 34px #ffffff;
+    margin: auto 4rem;
+}
+@media screen and (max-width:848px) {
+    .card{
+        position: relative;
+        width:35rem;
+        height: 50rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow:12px 12px 34px #666666,
+        -12px -12px 34px #ffffff;
+        margin: 2rem 4rem;
+    } 
+}
+@media screen and (max-width:848px) {
+    .card{
+        position: relative;
+        width:35rem;
+        height: 50rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow:12px 12px 34px #666666,
+        -12px -12px 34px #ffffff;
+        margin: 2rem 4rem;
+    } 
+}
+@media screen and (max-width:1285px) {
+    .card{
+        position: relative;
+        width:35rem;
+        height: 50rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow:12px 12px 34px #666666,
+        -12px -12px 34px #ffffff;
+        margin: 5rem 4rem;
+    } 
+}
+.card-second{
+    position: relative;
+    height: 55rem;
+}
+.img-popular{
+    position: absolute;
+    width:30px;
+    top:0px;
+    right:10px;
+}
+.card-header{
+    background-color: #00d9ff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  
+}
+.card-color{
+    background-color:#2584ff;
+}
+.card-discount2{
+    display: inline-block;
+    background-color: #126de4;
+    border-radius: 2rem;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: 1.5rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    color: #ffff;
+    font-weight: bold;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+.card-price-month{
+    margin-left: 3.5rem;
+}
+.card-price{
+    display: inline-block;
+    font-size: 5rem;
+    color: #ffff;
+    font-weight:400;
+}
+.card-month{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #ffff;
+    opacity: 0.6;
+}
+.card-discount{
+    display: inline-block;
+    background-color: #02cdf1;
+    border-radius: 2rem;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: 1.5rem;
+}
+.card-desc{
+    font-size: 1.8rem;
+    color: #ffff;
+    opacity: 0.8;
+    margin-left: 4rem;
+    margin-bottom: 2.5rem;
+}
+.card-list{
+    list-style-image:url(../images/tick.svg);
+    margin-left: 6rem;
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2.2;
+    font-weight: 500;
+    color: #1b0760;
+}
+.card-button{
+    font-size: 1.5rem;
+    padding: 2rem 10rem;
+    border-radius: 3rem;
+    color: #1b0760;
+    background-color: #ffff;
+    font-weight: 600;
+    margin-left: 3rem;
+    position: absolute;
+    bottom: 2rem;
+}
+.card-button-second{
+    background-color:#1b0760;
+    color: #ffff;
+}
+
+
+
+/* 介绍部分 */
+.introduce-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+}
+.introduce-head-title{
+    font-size: 4rem;
+    font-weight:bold;
+    color: #1b0760;
+}
+.introduce-head-desc{
+    font-size: 2rem;
+    color: 918ca4;
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+.introduce-body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.introduce-body-left{
+    margin-right: 15rem;
+}
+.introduce-body-right{
+    margin-left: 15rem;
+}
+.introduce-LearnMore{
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 900;
+    color: #ff3400;
+    margin-top: 2rem;
+}
+.icon-easy{
+    width: 30px;
+    height: 30px;
+}
+.introduce-body-title{
+    font-size: 2.4rem;
+    color: #1b0760;
+    margin-bottom: 1rem;
+}
+.introduce-body-desc{
+    width: 44rem;
+    font-size: 1.8rem;
+    color: #bab7c5;
+}
+.img-easy{
+    width: 57rem;
+}
+
+/* 控制面板部分 */
+.control-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+    align-items: center;
+    padding-bottom: 18rem;
+}
+
+.control-title{
+    font-size: 4rem;
+    color: #ffff;
+    margin-top: 5rem;
+}
+
+.control-img-desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+.control-img{
+    width: 65rem;
+    height: 45rem;
+}
+.control-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;   
+}
+.control-text-title{
+    color: #ffff;
+    font-size: 2rem;
+}
+.control-text-desc{
+    color: #ffff;
+    font-size: 2rem;
+    width: 40rem;
+    margin-top: 2rem;
+    opacity: 0.6;
+}
+.control-text{
+    margin-top: 4rem;
+}
+
+
+
+/* 个人介绍部分 */
+.person-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.person-title{
+    font-size: 4rem;
+    font-weight: 900;
+}
